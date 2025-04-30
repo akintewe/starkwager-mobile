@@ -816,7 +816,7 @@ List<Widget> _buildHashtagChips(BuildContext context, List<String> hashtags,
               ? context.isDarkMode
                   ? AppColors.buttonColor // Yellow in dark mode
                   : AppColors.tabSelectedColor // Blue in light mode
-              : const Color.fromRGBO(17, 25, 39, 1), // Dark color for unselected hashtags
+              : AppColors.primaryColor, // Dark color for unselected hashtags
           borderRadius: BorderRadius.circular(20),
         ),
         child: Row(
