@@ -741,7 +741,7 @@ class HashtagBottomSheet extends ConsumerWidget {
     return Container(
       padding: const EdgeInsets.all(24),
       decoration: BoxDecoration(
-        color: context.primaryBackgroundColor,
+        color: context.containerColor,
         borderRadius: BorderRadius.vertical(top: Radius.circular(20)),
       ),
       child: Column(
