@@ -388,7 +388,7 @@ class _CreateWagerScreenState extends ConsumerState<CreateWagerScreen> {
         isScrollControlled: true,
         builder: (context) => Container(
           decoration: BoxDecoration(
-            color: context.primaryBackgroundColor,
+            color: context.containerColor,
             borderRadius: BorderRadius.only(
               topLeft: Radius.circular(20),
               topRight: Radius.circular(20),
