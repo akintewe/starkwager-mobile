@@ -816,9 +816,7 @@ List<Widget> _buildHashtagChips(BuildContext context, List<String> hashtags,
               ? context.isDarkMode
                   ? AppColors.buttonColor // Yellow in dark mode
                   : AppColors.tabSelectedColor // Blue in light mode
-              : context.isDarkMode
-                  ? AppColors.grayNeutral800 // Dark in dark mode
-                  : AppColors.grayCool100, // Light gray in light mode
+              : const Color.fromRGBO(17, 25, 39, 1), // Dark color for unselected hashtags
           borderRadius: BorderRadius.circular(20),
         ),
         child: Row(
@@ -831,7 +829,7 @@ List<Widget> _buildHashtagChips(BuildContext context, List<String> hashtags,
                       ? context.isDarkMode
                           ? AppColors.grayNeutral800 // Dark text on yellow in dark mode
                           : AppColors.white // White text on blue in light mode
-                      : context.primaryTextColor,
+                      : AppColors.white, // White text on dark background
                   BlendMode.srcIn),
             ),
             horizontalSpace(4),
@@ -842,7 +840,7 @@ List<Widget> _buildHashtagChips(BuildContext context, List<String> hashtags,
                         ? context.isDarkMode
                             ? AppColors.grayNeutral800 // Dark text on yellow in dark mode
                             : AppColors.white // White text on blue in light mode
-                        : context.primaryTextColor,
+                        : AppColors.white, // White text on dark background
                   ),
             ),
           ],
